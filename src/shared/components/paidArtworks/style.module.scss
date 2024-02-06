@@ -1,0 +1,127 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.artStyle {
+  min-width: 336px;
+  min-height: 428px;
+  max-width: 100%;
+  max-height: 428px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.paidArtStyle {
+  width: 100%;
+}
+
+.dotsContainer {
+  min-width: 42px;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 42px;
+  align-items: center;
+}
+
+@mixin dot {
+  min-height: 10px;
+  min-width: 10px;
+  max-height: 10px;
+  max-width: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.activeDot {
+  @include dot();
+  background-color: #adb5bd;
+}
+
+.inActiveDot {
+  @include dot();
+  background-color: #dee2e6;
+}
+
+.btmBorder {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  background-color: #dee2e6;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 24px;
+  color: $DARK_GREY;
+  text-align: left;
+  @include elipsis(2);
+}
+
+.subTitle {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  text-decoration: line-through;
+}
+
+.highlightedText {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $PRIMARY;
+  text-align: left;
+}
+
+.dashStyle {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.noAvatarContainer {
+  min-width: 336px;
+  min-height: 428px;
+  max-width: 100%;
+  max-height: 428px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.titleLoader {
+  height: 24px;
+  width: 100%;
+}
+
+.subTitleLoader {
+  height: 22px;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .artStyle {
+    min-width: 285px;
+    min-height: 364px;
+    max-width: 100%;
+    max-height: 364px;
+    height: 100%;
+    width: 100%;
+  }
+  .title {
+    font-size: 20px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+}

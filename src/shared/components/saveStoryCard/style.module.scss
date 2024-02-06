@@ -1,0 +1,107 @@
+@import "shared/components/storyCard/style.module.scss";
+.topContainer {
+  max-height: 265px;
+  min-height: 265px;
+  height: 100%;
+}
+.hieght {
+  min-height: 30px;
+}
+.artStyle {
+  min-width: 176px;
+  max-width: 176px;
+  min-height: 192px;
+  width: 100%;
+  object-fit: fill;
+}
+
+.greenActionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.greenActionIconStyle path {
+  stroke: $PRIMARY;
+}
+
+.greyActionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.greyActionIconStyle path {
+  stroke: $GREY2;
+}
+
+.btmBorder {
+  height: 1px;
+  background-color: #e4e7ec;
+  position: absolute;
+  bottom: 0;
+  width: 96%;
+}
+.actionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.actionlabel {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+}
+
+.singleLine {
+  -webkit-line-clamp: 1;
+}
+
+.storyLabelSave{
+  font-family: HNRegular !important;
+}
+
+.doubleLine {
+  -webkit-line-clamp: 2;
+}
+
+.optionsContainer {
+  width: 189px !important;
+  right: -160px;
+  top: 20px;
+}
+
+.descStyle2 {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: left;
+  @include elipsis(3);
+  max-height: 76px;
+  min-height: 68px;
+}
+
+@media (max-width: 990px) {
+  .columnCustomWidth {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .artStyle {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .topContainer {
+    max-height: fit-content;
+    min-height: fit-content;
+    height: auto !important;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .optionsContainer {
+    right: 10px;
+  }
+}

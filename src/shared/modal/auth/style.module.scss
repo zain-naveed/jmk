@@ -1,0 +1,53 @@
+@import "shared/utils/colors.scss";
+
+.modalContent {
+  width: 400px;
+  border-color: #e4e4e4;
+  border-radius: 12px;
+}
+
+.otpModalContent {
+  width: 527.45px !important;
+  border-color: #e4e4e4;
+  border-radius: 15.8236px;
+}
+
+@mixin dialogContent {
+  overflow-y: auto;
+  min-width: fit-content;
+  overflow-x: hidden;
+}
+
+.signinDailogContent {
+  @include dialogContent();
+  height: 760px;
+}
+
+.signupDailogContent {
+  @include dialogContent();
+  height: 900px;
+}
+
+.otpDailogContent {
+  @include dialogContent();
+  height: 450px;
+}
+
+.emailDailogContent {
+  @include dialogContent();
+  height: 400px;
+}
+
+.passwordDailogContent {
+  @include dialogContent();
+  height: 450px;
+}
+
+@media screen and (max-width: 576px) {
+  .modalContent {
+    width: 100% !important;
+  }
+  .otpModalContent {
+    width: 100% !important;
+  }
+}

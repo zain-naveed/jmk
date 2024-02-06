@@ -1,0 +1,72 @@
+@import "shared/utils/colors.scss";
+
+.slick-next {
+  display: none !important;
+}
+.slick-prev {
+  display: none !important;
+}
+.sliderImg {
+  max-width: 608px;
+  max-height: 620px;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-bg {
+  height: 1px;
+  background-color: $LIGHT_GREY;
+  width: 82%;
+}
+
+.highlighted-slide {
+  height: 1px;
+  background-color: $DARK_GREY;
+  width: 0%;
+  transition: width 0.4s;
+}
+
+.arrowContainer {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrowIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid $LIGHT_GREY;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sliderIndexText {
+  font-family: InterRegular;
+  font-size: 12px;
+  line-height: 18px;
+  color: $GREY;
+  text-align: left;
+  display: flex;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .sliderImg {
+    max-width: 408px;
+    max-height: 420px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sliderImg {
+    max-width: 408px;
+    max-height: 420px;
+  }
+}

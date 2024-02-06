@@ -1,0 +1,67 @@
+@import 'shared/utils/responsive.module.scss';
+@import 'shared/utils/colors.scss';
+@import 'shared/components/storyCard/style.module.scss';
+
+.tagHeading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0f1106;
+  margin-bottom: 5px;
+}
+
+.tagsComp {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  overflow: scroll;
+  padding-left: 15px;
+  border-radius: 24px;
+  margin-bottom: 10px;
+  height: 44px;
+  border: 1px solid #d0d5dd;
+}
+
+.tagsComp::-webkit-scrollbar {
+  display: none;
+}
+
+.tagsInside {
+  height: 22px;
+  background: #f2f4f7;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 2px 6px 2px 8px;
+}
+
+.tagText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #0f1106;
+}
+
+.tagsInside {
+  height: 22px;
+  background: #f2f4f7;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 2px 6px 2px 8px;
+  margin-right: 10px;
+}
+
+.inputTags:focus-visible {
+  outline: none;
+}
+.inputTags {
+  border: none;
+  height: 44px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+}

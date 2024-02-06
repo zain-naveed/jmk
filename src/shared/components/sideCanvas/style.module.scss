@@ -1,0 +1,76 @@
+@import "shared/utils/colors.scss";
+@import "shared/utils/responsive.module.scss";
+.backDropContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 100;
+  padding: 0px !important;
+  transition: visibility 0.2s;
+  overflow: hidden;
+}
+
+.crossIcon{
+  position: absolute;
+  top: 1.5rem!important;
+  right: 2rem!important;
+  cursor: pointer;
+}
+
+.mainContainer {
+  background-color: white;
+  max-width: 300px;
+  height: 100%;
+  padding: 0px !important;
+  overflow-y: scroll;
+  transition: transform 0.3s;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.activeLabel {
+  color: $PRIMARY !important;
+}
+
+.hidden {
+  transform: translateX(300px);
+}
+
+.shown {
+  transform: translateX(0px);
+}
+
+.mainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.logoStyle {
+  height: 38px;
+  width: 76.5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.headerLabels {
+  font-family: HNMedium;
+  font-size: 16px;
+  color: $DARK_GREY;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.strtbtn {
+  height: 44px;
+  border: 1px solid $DARK_GREY;
+  outline: 0px;
+  border-radius: 24px;
+  background-color: $DARK_GREY;
+  font-family: HNMedium;
+  font-size: 16px;
+  color: white;
+}

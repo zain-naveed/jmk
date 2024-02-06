@@ -1,0 +1,81 @@
+@import "shared/utils/colors.scss";
+
+.userContainer {
+  min-width: 96px;
+  width: 12.499999995%;
+  flex: 0 0 12.499%;
+  max-width: 12.499%;
+}
+
+.userIcon {
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $DARK_GREY;
+}
+
+@media screen and (max-width: 400px) {
+  .userContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .userContainer {
+    min-width: 96px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .userContainer {
+    min-width: 96px;
+    width: 33.333%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .userContainer {
+    min-width: 96px;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userContainer {
+    min-width: 96px;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .userContainer {
+    min-width: 96px;
+    width: 14.2857%;
+    flex: 0 0 14.2857%;
+    max-width: 14.2857%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .userContainer {
+    min-width: 96px;
+    width: 11.111%;
+    flex: 0 0 11.111%;
+    max-width: 11.111%;
+  }
+}

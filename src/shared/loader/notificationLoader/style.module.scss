@@ -1,0 +1,33 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.artStyle {
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+}
+
+.label {
+  width: 95px;
+  height: 14px;
+}
+
+.labelNotification {
+  width: 292px;
+  height: 14px;
+}
+
+.date {
+  width: 64px;
+  height: 12px;
+}
+
+@media screen and (max-width: 580px) {
+  .labelNotification {
+    width: 220px;
+  }
+
+  .label {
+    margin-right: 10px !important;
+  }
+}

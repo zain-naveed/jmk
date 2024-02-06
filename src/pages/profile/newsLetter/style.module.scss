@@ -1,0 +1,367 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.newsLetterContainer {
+  border-radius: 8px;
+  background-color: $BG;
+}
+
+.contentContainer {
+  min-width: 440px;
+  max-width: 440px;
+  width: 100%;
+}
+
+.iconContainer {
+  height: 240px;
+  width: 240px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 125px;
+  height: 119px;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.subTitle {
+  font-family: ALRegular;
+  font-size: 16px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.inputContainer {
+  height: 44px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid $BORDER;
+  border-radius: 24px;
+}
+
+.inputStyle {
+  width: 100%;
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+  height: 100%;
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $DARK_GREY;
+}
+
+.inputStyle::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: HNRegular;
+  color: $GREY2;
+  opacity: 1; /* Firefox */
+}
+
+.inputStyle:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: HNRegular;
+  color: $GREY2;
+}
+
+.inputStyle::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: HNRegular;
+  color: $GREY2;
+}
+
+.error {
+  color: #ea5b5b;
+  font-size: 11px;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  top: 44px;
+}
+
+.btnContainer {
+  height: 36px;
+  width: 105px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  .contentContainer {
+    min-width: 200px;
+    max-width: 100%;
+  }
+
+  .iconContainer {
+    height: 185px;
+    width: 185px;
+  }
+
+  .icon {
+    width: 96px;
+    height: 92px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subTitle {
+    font-size: 13px;
+  }
+
+  .inputStyle {
+    font-size: 11px;
+  }
+
+  .btnContainer {
+    width: 80px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .contentContainer {
+    min-width: 369px;
+    max-width: 369px;
+  }
+
+  .iconContainer {
+    height: 202px;
+    width: 202px;
+  }
+
+  .icon {
+    width: 105px;
+    height: 100px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .inputStyle {
+    font-size: 12px;
+  }
+
+  .btnContainer {
+    width: 88px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contentContainer {
+    min-width: 369px;
+    max-width: 369px;
+  }
+
+  .iconContainer {
+    height: 202px;
+    width: 202px;
+  }
+
+  .icon {
+    width: 105px;
+    height: 100px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .inputStyle {
+    font-size: 12px;
+  }
+
+  .btnContainer {
+    width: 88px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contentContainer {
+    min-width: 403px;
+    max-width: 403px;
+  }
+
+  .iconContainer {
+    height: 220px;
+    width: 220px;
+  }
+
+  .icon {
+    width: 115px;
+    height: 109px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subTitle {
+    font-size: 15px;
+  }
+
+  .inputStyle {
+    font-size: 13px;
+  }
+
+  .btnContainer {
+    width: 96px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contentContainer {
+    min-width: 403px;
+    max-width: 403px;
+  }
+
+  .iconContainer {
+    height: 220px;
+    width: 220px;
+  }
+
+  .icon {
+    width: 115px;
+    height: 109px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subTitle {
+    font-size: 15px;
+  }
+
+  .inputStyle {
+    font-size: 13px;
+  }
+
+  .btnContainer {
+    width: 96px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contentContainer {
+    min-width: 440px;
+    max-width: 440px;
+  }
+
+  .iconContainer {
+    height: 240px;
+    width: 240px;
+  }
+
+  .icon {
+    width: 125px;
+    height: 119px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+
+  .inputStyle {
+    font-size: 14px;
+  }
+
+  .btnContainer {
+    width: 105px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contentContainer {
+    min-width: 440px;
+    max-width: 440px;
+  }
+
+  .iconContainer {
+    height: 240px;
+    width: 240px;
+  }
+
+  .icon {
+    width: 125px;
+    height: 119px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+
+  .inputStyle {
+    font-size: 14px;
+  }
+
+  .btnContainer {
+    width: 105px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .contentContainer {
+    min-width: 440px;
+    max-width: 440px;
+  }
+
+  .iconContainer {
+    height: 240px;
+    width: 240px;
+  }
+
+  .icon {
+    width: 125px;
+    height: 119px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+
+  .inputStyle {
+    font-size: 14px;
+  }
+
+  .btnContainer {
+    width: 105px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,15 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.noContentTopContainer {
+  min-height: 450px;
+  max-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addArtContainer {
+  display: flex;
+  justify-content: end;
+}

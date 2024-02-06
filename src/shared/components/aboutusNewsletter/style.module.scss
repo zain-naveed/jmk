@@ -1,0 +1,58 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.landingNewsTitle{
+  color: $PRIMARY;
+  font-family: ALMedium;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal
+}
+
+.contactContainer {
+  background-color: $BG;
+}
+.newsTitle {
+  font-family: ALBold;
+  font-size: 40px;
+  color: $DARK_GREY;
+  text-align: center;
+}
+.subscribeButton{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin: 0 auto !important;
+}
+.newsSubTitle {
+  font-family: HNRegular;
+  font-size: 20px;
+  color: $GREY2;
+  text-align: center;
+}
+.btmLabel {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $GREY2;
+  text-align: left;
+}
+
+.prvLabel {
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.newsletterInput {
+  width: 360px;
+  height: 48px;
+}
+
+@media screen and (max-width: 767px){
+  .newsTitle{
+    font-size: 25px;
+  }
+  .newsSubTitle{
+    font-size: 16px;
+  }
+}

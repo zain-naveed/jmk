@@ -1,0 +1,57 @@
+@import "shared/utils/colors.scss";
+
+.iconStyle {
+  width: 68px;
+  height: 68px;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  line-height: 40px;
+}
+
+.subTitle {
+  font-family: HNRegular;
+  font-size: 18px;
+  color: $GREY2;
+  text-align: left;
+}
+
+.cancelBtn {
+  background-color: white !important;
+  border: 1px solid $PRIMARY !important;
+  color: #344054;
+}
+
+.link {
+  cursor: pointer;
+  font-family: HNRegular;
+  text-align: left;
+  text-decoration: underline;
+  color: $PRIMARY;
+}
+
+.btnDisabled {
+  background-color: $GREY2 !important;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .iconStyle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .subTitle {
+    font-size: 15px;
+  }
+}

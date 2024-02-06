@@ -1,0 +1,66 @@
+@import 'shared/utils/responsive.module.scss';
+@import 'shared/utils/colors.scss';
+@import 'shared/components/storyCard/style.module.scss';
+
+.imageLink {
+  height: 126px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.labelGreen {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #50934b;
+}
+
+.progressBar {
+  margin-top: 10px;
+  width: 86%;
+  justify-content: end;
+  display: inline-table;
+}
+
+.labelForUpload {
+  padding: 16px;
+}
+
+.uploadedImageText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  margin-left: 14px;
+}
+
+.fileSize {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+}
+
+.labelGrey {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #868e96;
+}
+
+.uploadImageTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upholder {
+  cursor: pointer;
+}

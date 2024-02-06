@@ -1,0 +1,24 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+@import "shared/components/storyCard/style.module.scss";
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+}
+
+.progressBar {
+  flex-grow: 1;
+  margin-right: 5px;
+  height: 8px;
+}
+
+.progressText {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #344054;
+}

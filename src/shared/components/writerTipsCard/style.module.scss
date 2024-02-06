@@ -1,0 +1,51 @@
+@import "shared/utils/colors.scss";
+.container {
+  border-radius: 18px;
+  background-color: $BG;
+  padding: 30px;
+}
+
+.ellipsesText{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;      
+  cursor: pointer;  
+}
+
+.title {
+  font-size: 16px;
+  font-family: ALBold;
+  color: $DARK_GREY;
+  text-align: left;
+  align-self: flex-start;
+}
+.subTitle {
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $DARK_GREY;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.subTitleLoader {
+  height: 14px;
+}
+
+.iconStyle {
+  min-height: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  max-width: 28px;
+}
+
+.notContent {
+  height: 160px;
+  width: 160px;
+}
+
+.noContentLabel {
+  font-family: InterMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+}

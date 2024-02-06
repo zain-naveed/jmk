@@ -1,0 +1,41 @@
+@import "shared/utils/colors.scss";
+
+.avatarStyle {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+@mixin commonLabel {
+  text-align: left;
+  &:hover {
+    cursor: pointer;
+  }
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.nameLabel {
+  @include commonLabel();
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+}
+
+.nameLabel2 {
+  @include commonLabel();
+  font-family: InterMedium;
+  font-size: 14px;
+  color: $GREY2;
+}
+
+.nameLabel3 {
+  @include commonLabel();
+  font-family: ALBold;
+  font-size: 18px;
+  color: $DARK_GREY;
+}

@@ -1,0 +1,103 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.toplevelContainer {
+  // background-color: #fdf8ea;
+  background-color: $BG;
+  padding: 80px 0px;
+}
+.siderContainer {
+  height: 100%;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+.siderContainer::-webkit-scrollbar {
+  display: none;
+}
+.userImage {
+  width: 280px;
+  height: 292px;
+  bottom: 14.87%;
+  object-fit: cover;
+}
+
+.quoteLabel {
+  font-family: ALBold;
+  font-size: 32px;
+  color: $DARK_GREY;
+  line-height: 46px;
+  text-align: left;
+}
+
+.nameLabel {
+  font-family: HNRegular;
+  font-size: 18px;
+  color: $GREY2;
+  text-align: left;
+}
+
+.arrowIcon {
+  height: 20px;
+  width: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.active path {
+  stroke: #183b56;
+}
+.inActive {
+  &:hover {
+    cursor: not-allowed !important;
+  }
+}
+
+.inActive path {
+  stroke: #959ead;
+}
+
+.quoteIcon {
+  height: 115px;
+  width: 110.67px;
+  position: absolute;
+  bottom: -65px;
+  left: 35px;
+}
+
+.arrowContainer {
+  position: absolute;
+  right: 110px;
+  bottom: 40px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .userImage {
+    width: 241px;
+    height: 252px;
+    bottom: 12.75%;
+  }
+
+  .quoteLabel {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .nameLabel {
+    font-size: 16px;
+  }
+
+  .arrowIcon {
+    height: 17px;
+    width: 17px;
+  }
+
+  .quoteIcon {
+    height: 99px;
+    width: 95.4px;
+    bottom: -56px;
+    left: 30px;
+  }
+}

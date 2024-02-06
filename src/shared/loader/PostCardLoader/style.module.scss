@@ -1,0 +1,118 @@
+@import "shared/utils/colors.scss";
+
+.artContainer {
+  max-width: 90%;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+}
+
+.artStyle {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.moreIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.mainContainer {
+  max-width: 90%;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  max-height: 300px;
+}
+
+.title {
+  height: 18px;
+  width: 90%;
+}
+.dateIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.dateLabel {
+  height: 12px;
+  width: 30%;
+}
+
+.tagContainer {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  width: 40%;
+}
+@media screen and (max-width: 576px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .artContainer {
+    min-width: 96px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .artContainer {
+    min-width: 96px;
+    width: 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .artContainer {
+    min-width: 96px;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .artContainer {
+    min-width: 96px;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .artContainer {
+    min-width: 96px;
+    width: 16.667%;
+    flex: 0 0 16.667%;
+    max-width: 16.667%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .artContainer {
+    min-width: 96px;
+    width: 14.28%;
+    flex: 0 0 14.28%;
+    max-width: 14.28%;
+  }
+}

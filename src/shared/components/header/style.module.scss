@@ -1,0 +1,160 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.headerContainer {
+  height: 80px;
+  border-bottom: 1px solid rgba($color: #d0d5dd, $alpha: 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoStyle {
+  height: 38px;
+  width: 76.5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.headerLabels {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $DARK_GREY;
+  &:hover {
+    cursor: pointer;
+    color: $PRIMARY;
+  }
+}
+
+.activeLabel {
+  color: $PRIMARY;
+}
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+}
+
+
+
+.menuIcon {
+  height: 24px;
+  width: 24px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.strtbtn {
+  height: 44px;
+  border: 1px solid $BORDER;
+  outline: 0px;
+  border-radius: 24px;
+  background-color: white;
+  font-family: HNMedium;
+  font-size: 16px;
+  color: #344054;
+}
+
+.searchContainer {
+  height: 42px;
+  width: 217px;
+  border-radius: 24px;
+  border: 1px solid $LIGHT_GREY;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconStyle {
+  height: 20px;
+  width: 20px;
+}
+
+.iconStyle path {
+  stroke: $GREY;
+}
+
+.searchInput {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  width: 90%;
+}
+
+.arrowIcon {
+  min-height: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  max-width: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+.optionsContainer {
+  width: 167px !important;
+  right: 0px;
+  top: 50px;
+}
+
+.activeIcon path {
+  stroke: $PRIMARY;
+}
+
+.newNotification {
+  // background: $;
+  // width: 10px;
+  // height: 10px;
+  // border-radius: 50%;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  background: $PRIMARY;
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  width: 16px;
+  margin-right: -5px;
+  margin-top: -2px;
+}
+
+.downIcon {
+  height: 14px;
+  width: 14px;
+}
+.downIcon path {
+  stroke: #344054;
+}
+
+@media screen and (max-width: 400px) {
+  .headerLabels {
+    font-size: 14px;
+  }
+
+  .logoStyle {
+    height: 33px;
+    width: 67px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navResponsive{
+    -webkit-overflow-scrolling : touch !important;
+    overflow: auto !important;
+  }
+}
+

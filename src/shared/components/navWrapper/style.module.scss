@@ -1,0 +1,9 @@
+.headerHeight {
+  height: 80px;
+}
+
+@media screen and (max-width: 400px) {
+  .headerHeight {
+    height: 0px;
+  }
+}

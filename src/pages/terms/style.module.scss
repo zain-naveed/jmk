@@ -1,0 +1,35 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.topMainContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.text {
+  font-family: HNRegular;
+  // color: $GREY2;
+  text-align: left;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 30px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.paragraph_container_loader {
+  height: 18px;
+}

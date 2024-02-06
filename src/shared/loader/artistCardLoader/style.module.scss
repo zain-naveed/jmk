@@ -1,0 +1,77 @@
+@import "shared/utils/colors.scss";
+
+.artistsContainer {
+  min-width: 96px;
+  width: 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.artistsStyle {
+  min-width: 227px;
+  object-fit: cover;
+  height: 246.32px;
+  width: 100%;
+}
+
+.title {
+  height: 18px;
+}
+
+.subTitle {
+  height: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  .artistsContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .artistsStyle {
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .artistsContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .artistsContainer {
+    min-width: 96px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .artistsContainer {
+    min-width: 96px;
+    width: 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .artistsContainer {
+    min-width: 96px;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .artistsContainer {
+    min-width: 96px;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

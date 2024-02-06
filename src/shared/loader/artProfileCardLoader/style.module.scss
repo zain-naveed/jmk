@@ -1,0 +1,80 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.artContainer {
+  min-width: 383px;
+  width: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.artStyle {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+}
+
+.categContainer {
+  height: 30px;
+  width: 140px;
+}
+
+.moreIcon {
+  width: 24px;
+  height: 24px;
+}
+.title {
+  height: 26px;
+  width: 60%;
+}
+
+@media screen and (max-width: 576px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .artContainer {
+    min-width: 96px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .artContainer {
+    min-width: 383px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

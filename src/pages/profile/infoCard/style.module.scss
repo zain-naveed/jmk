@@ -1,0 +1,71 @@
+@import "shared/utils/colors.scss";
+.infoContainer {
+  max-height: 451px;
+  border-radius: 18px;
+  background-color: $BG;
+  padding: 30px;
+}
+.btnFont {
+  font-size: 14px;
+  font-family: InterMedium;
+  background-color: $PRIMARY;
+  min-height: 36px;
+  max-height: 36px;
+}
+.title {
+  font-size: 16px;
+  font-family: ALBold;
+  color: $DARK_GREY;
+  text-align: left;
+}
+.titleLoader {
+  height: 16px;
+  width: 200px;
+}
+.subTitle {
+  font-size: 12px;
+  font-family: HNRegular;
+  color: $GREY2;
+  text-align: left;
+}
+.subTitleLoader {
+  height: 12px;
+}
+.countTitle {
+  font-size: 16px;
+  font-family: ALRegular;
+  color: $DARK_GREY;
+  text-align: left;
+}
+.countTitleLoader {
+  height: 16px;
+  width: 46px;
+}
+.countSubTitle {
+  font-size: 14px;
+  font-family: HNBold;
+  color: $DARK_GREY;
+  text-align: left;
+}
+.countSubTitleLoader {
+  height: 14px;
+  width: 24px;
+}
+.reportLabel {
+  font-size: 18px;
+  font-family: ALRegular;
+  color: $RED;
+  text-align: left;
+}
+.reportLabelLoader {
+  height: 18px;
+  width: 100px;
+}
+.flagIcon {
+  height: 24px;
+  width: 24px;
+}
+
+.flagIcon path {
+  stroke: $RED;
+}

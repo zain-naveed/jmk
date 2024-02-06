@@ -1,0 +1,39 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+.btmBorder {
+  border-bottom: 1px solid #e4e7ec;
+}
+.contributerSubContainer {
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+.contributerSubContainer::-webkit-scrollbar {
+  height: 6px;
+  display: none;
+}
+
+.iconStyle {
+  height: 30px;
+  width: 30px;
+}
+
+.noContentIcon {
+  height: 100px;
+  width: 100px;
+}
+
+.noContentLabel {
+  font-size: 14px;
+}
+
+.loaderContainer {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $GREY2;
+}

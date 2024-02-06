@@ -1,0 +1,120 @@
+@import "shared/utils/colors.scss";
+
+.modalContent {
+  width: 495px !important;
+  border-color: #e4e4e4;
+  border-radius: 12px;
+}
+
+.dialogContent {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: fit-content;
+  height: 590px;
+}
+
+.crossIcon {
+  height: 24px;
+  width: 24px;
+}
+.crossIcon path {
+  stroke: $GREY;
+  fill: $GREY;
+}
+.logo {
+  width: 91.25px;
+  height: 45.33px;
+}
+.headText {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: center;
+}
+
+.fieldLabel {
+  font-family: HNMedium;
+  font-size: 12px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.cardContainer {
+  width: 100px;
+  min-height: 60px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid $BORDER;
+}
+
+.priceLabel {
+  font-family: HNMedium;
+  font-size: 16px;
+  color: $DARK_GREY;
+}
+
+.selectedPlan {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  background-color: transparent;
+  height: 44px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid $BORDER;
+  background-color: white;
+}
+
+.inputStyle {
+  width: 100%;
+  // height: 100%;
+  background-color: transparent;
+  border: 0px;
+  outline: 0;
+  font-family: HNRegular;
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dollarIconContainer {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dollarIcon {
+  height: 22px;
+  width: 22px;
+}
+
+.textAreaStyle {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  outline: 0;
+  font-family: HNRegular;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid $BORDER;
+  background-color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .modalContent {
+    width: 100% !important;
+  }
+}

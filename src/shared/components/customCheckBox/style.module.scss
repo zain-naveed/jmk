@@ -1,0 +1,26 @@
+@import "shared/utils/colors.scss";
+
+@mixin commonStyle {
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+}
+
+.inActive {
+  @include commonStyle();
+  border: 1px solid $BORDER;
+}
+
+.active {
+  @include commonStyle();
+  border: 1px solid $DARK_GREY;
+}
+
+.text {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $GREY2;
+  &:hover {
+    cursor: pointer;
+  }
+}

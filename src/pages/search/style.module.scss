@@ -1,0 +1,139 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+@import "shared/components/storyCard/style.module.scss";
+
+.searchScreenContainer {
+  height: calc(100vh);
+}
+
+.topMainContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.label {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $GREY2;
+  text-align: left;
+  line-height: 32px;
+}
+
+.noResults {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 36px;
+  text-align: center;
+  color: $BLACK2;
+}
+
+.noResultsSub {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: $GREY;
+}
+
+.labelSearch {
+  color: $DARK_GREY;
+}
+
+.subTitle {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY;
+  text-align: left;
+}
+
+.topLevelContainer {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topLevelContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topLevelContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media screen and (max-width: 575px) {
+  .label {
+    font-size: 24px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+}
+
+.hieght {
+  min-height: 30px;
+}
+.artStyle {
+  width: 176px;
+  height: 192px;
+  object-fit: cover;
+}
+
+.btmBorder {
+  border-bottom: 1px solid #e4e7ec;
+}
+.actionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.actionlabel {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+}
+
+.singleLine {
+  -webkit-line-clamp: 1;
+}
+
+.doubleLine {
+  -webkit-line-clamp: 2;
+}
+
+.optionsContainer {
+  width: 189px !important;
+  right: -160px;
+  top: 20px;
+}
+
+@media (max-width: 990px) {
+  .columnCustomWidth {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .artStyle {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .optionsContainer {
+    right: 10px;
+  }
+}

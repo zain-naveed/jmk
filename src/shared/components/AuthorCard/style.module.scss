@@ -1,0 +1,34 @@
+@import "shared/utils/colors.scss";
+
+.container {
+  max-height: 222px;
+  background-color: $BG;
+  border-radius: 8px;
+}
+
+.socialIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.socialIcon path {
+  fill: $GREY2;
+}
+
+.descLabel {
+  font-size: 12px;
+  font-family: HNRegular;
+  color: $GREY2;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.btnFont {
+  font-size: 14px;
+  min-height: 32px;
+  max-height: 32px;
+}

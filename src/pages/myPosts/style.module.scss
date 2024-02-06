@@ -1,0 +1,103 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.myPostsContainer {
+  height: calc(100vh);
+  scroll-behavior: smooth;
+}
+
+.topMainContainer {
+  height: calc(100vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  line-height: 32px;
+}
+
+.subTitle {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY;
+  text-align: left;
+}
+.plusBtn {
+  width: fit-content;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: $PRIMARY;
+}
+.plusIcon {
+  height: 20px;
+  width: 20x;
+}
+
+.activeVerticalTabContainer {
+  background-color: $PRIMARY;
+  border-radius: 24px;
+}
+.inActiveVerticalTabContainer {
+  background-color: white;
+}
+
+.optionsContainer {
+  width: 240px !important;
+  right: 0px;
+  top: 43px;
+  z-index: 99;
+}
+
+@mixin VerticalTabLabel {
+  font-size: 14px;
+  text-align: left;
+}
+
+.activeVerticalTabLabel {
+  @include VerticalTabLabel();
+  font-family: HNMedium;
+  color: black;
+}
+
+.inActiveVerticalLabel {
+  @include VerticalTabLabel();
+  font-family: HNRegular;
+  color: $GREY2;
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+  .activeVerticalTabContainer {
+    border-radius: 20px;
+  }
+  .plusBtn {
+    width: fit-content;
+    height: 34px;
+    font-size: 12px;
+  }
+  .plusIcon {
+    height: 17px;
+    width: 17px;
+  }
+}

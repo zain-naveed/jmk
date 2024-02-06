@@ -1,0 +1,23 @@
+@import "shared/utils/colors.scss";
+.chartContainer {
+  border: 1px solid #e4e4e4;
+  border-radius: 6.7526px;
+}
+
+.chartTitle {
+  font-family: HNMedium;
+  font-size: 15.2px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.dateLabel {
+  font-family: HNRegular;
+  font-size: 12px;
+  text-align: left;
+  color: $DARK_GREY;
+}
+
+.loaderStyle {
+  height: 400px;
+}

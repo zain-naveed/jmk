@@ -1,0 +1,73 @@
+@import "shared/utils/colors.scss";
+
+.paginationContainer {
+  display: flex;
+  list-style-type: none;
+  .paginationItem {
+    padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: $GREY2;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 8px;
+    line-height: 1.43;
+    font-size: 14px;
+    font-family: InterMedium;
+    min-width: 32px;
+
+    &:hover {
+      background: rgba(80, 147, 75, 0.19);
+      cursor: pointer;
+    }
+  }
+}
+
+.active {
+  background: rgba(80, 147, 75, 0.19);
+  color: $DARK_GREY !important;
+}
+
+.dots {
+  color: $GREY2;
+}
+
+.arrowContainer {
+  height: 36px;
+  border: 1px solid #adb5bd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionLabel {
+  font-family: InterMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+}
+
+.iconStyle {
+  height: 20px;
+  width: 20px;
+}
+
+.smallScreenDisplay {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .display {
+    display: none;
+  }
+  .paginationContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .smallScreenDisplay {
+    display: flex;
+  }
+}

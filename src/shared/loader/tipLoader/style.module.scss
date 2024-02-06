@@ -1,0 +1,17 @@
+@import "shared/utils/colors.scss";
+.container {
+  border-radius: 18px;
+  background-color: $BG;
+  padding: 30px;
+}
+
+.subTitleLoader {
+  height: 14px;
+}
+
+.iconStyle {
+  min-height: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  max-width: 28px;
+}

@@ -1,0 +1,76 @@
+@import "shared/utils/colors.scss";
+
+.crossIcon {
+  height: 24px;
+  width: 24px;
+}
+.crossIcon path {
+  stroke: $GREY;
+  fill: $GREY;
+}
+.logo {
+  width: 91.25px;
+  height: 45.33px;
+}
+.heading {
+  font-family: HNBold;
+  font-size: 21px;
+  color: $DARK_GREY;
+}
+.headText {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: center;
+}
+
+.otpInputStyle {
+  width: 68.32px !important;
+  height: 56.259px !important;
+  border: 1px solid $BORDER;
+  border-radius: 12.08px;
+  &:focus {
+    outline-color: $DARK_GREY;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.btnStyle {
+  min-height: 44px;
+}
+
+.timerText {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $GREY2;
+}
+
+.timerTextHighlighted {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+}
+
+.error {
+  color: #ea5b5b;
+  font-size: 11px;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+}
+
+.disable {
+  border-color: $BORDER;
+  color: $GREY;
+}

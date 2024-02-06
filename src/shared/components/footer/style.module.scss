@@ -1,0 +1,24 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.toplevelContainer {
+  box-shadow: 0px 0px 25px rgba(68, 94, 132, 0.1);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.footerContainer {
+  height: 80px;
+}
+
+.footerLabels {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $DARK_GREY;
+  &:hover {
+    cursor: pointer;
+  }
+}

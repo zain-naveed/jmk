@@ -1,0 +1,44 @@
+@import "shared/utils/colors.scss";
+
+.modalContent {
+  width: 527.45px !important;
+  border-color: #e4e4e4;
+  border-radius: 15.8236px;
+}
+
+.successModalContent {
+  width: 620.45px !important;
+  border-color: #e4e4e4;
+  border-radius: 15.8236px;
+}
+
+@mixin dialogContent {
+  overflow-y: auto;
+  min-width: fit-content;
+  overflow-x: hidden;
+}
+
+.termsDailogContent {
+  @include dialogContent();
+  height: 450px;
+}
+
+.approvalDailogContent {
+  @include dialogContent();
+  height: 450px;
+}
+
+.successDailogContent {
+  @include dialogContent();
+  height: 450px;
+}
+.winnerDailogContent {
+  @include dialogContent();
+  height: 450px;
+}
+
+@media screen and (max-width: 576px) {
+  .modalContent {
+    width: 100% !important;
+  }
+}

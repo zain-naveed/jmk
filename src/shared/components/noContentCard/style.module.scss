@@ -1,0 +1,60 @@
+@import "shared/utils/colors.scss";
+.noContentImg {
+  width: 284px;
+  height: 206px;
+}
+
+.labalContainer {
+  max-width: 395px;
+}
+
+.label1 {
+  font-family: InterMedium;
+  font-size: 20px;
+  color: $DARK_GREY;
+}
+
+.label2 {
+  font-family: InterRegular;
+  font-size: 17px;
+  color: $GREY;
+  text-align: center;
+}
+
+@media screen and (max-width: 455px) {
+  .noContentImg {
+    width: 198px;
+    height: 144px;
+  }
+
+  .labalContainer {
+    max-width: 275px;
+  }
+
+  .label1 {
+    font-size: 15px;
+  }
+
+  .label2 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 455px) and (max-width: 576px) {
+  .noContentImg {
+    width: 237px;
+    height: 172px;
+  }
+
+  .labalContainer {
+    max-width: 330px;
+  }
+
+  .label1 {
+    font-size: 17px;
+  }
+
+  .label2 {
+    font-size: 15px;
+  }
+}

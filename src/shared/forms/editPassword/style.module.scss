@@ -1,0 +1,54 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.topLevelContainer {
+  border: 1px solid #e4e4e4;
+  border-radius: 24px;
+}
+
+.titleLabel {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $GREY2;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.inputLabel {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $GREY2;
+  text-align: left;
+}
+
+.saveBtn {
+  width: auto;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: $PRIMARY;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cancelBtn {
+  width: 77px;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: #f9fafb;
+  color: $DARK_GREY;
+}
+
+@media screen and (max-width: 576px) {
+  .saveBtn {
+    width: auto;
+    height: 34px;
+    font-size: 12px;
+  }
+  .cancelBtn {
+    width: 64px;
+    height: 34px;
+    font-size: 12px;
+  }
+}

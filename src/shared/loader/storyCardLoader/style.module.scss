@@ -1,0 +1,107 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+.contestCardContainer {
+  min-height: 501px;
+}
+
+.artStyle {
+  height: 285px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.iconUpArrow {
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.categContainer {
+  height: 30px;
+  width: 140px;
+}
+
+.storyLabel {
+  height: 22px;
+  width: 100%;
+}
+.storyLabel2 {
+  height: 22px;
+  width: 30%;
+}
+
+.submitStoryContainer {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 170px;
+  background-color: white;
+  border-radius: 24px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.submitLabel {
+  font-family: HNRegular;
+  font-size: 14px;
+  text-align: left;
+  color: $PRIMARY;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.appertureIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.descStyle {
+  height: 16px;
+  width: 100%;
+}
+
+.actionContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+.actionContainerBg {
+  min-height: 44px;
+}
+
+@media screen and (max-width: 576px) {
+  .artStyle {
+    min-width: 156px;
+    width: 156px;
+    height: 100%;
+  }
+  .contestCardContainer {
+    min-height: 117px;
+    max-height: 117px;
+  }
+  .categContainer {
+    height: 18px;
+    width: 84px;
+  }
+  .descStyle {
+    height: 14px;
+  }
+  .iconUpArrow {
+    min-height: 10px;
+    min-width: 10px;
+    max-height: 10px;
+    width: 10px;
+  }
+  .actionContainerBg {
+    min-height: 22px;
+  }
+  .btnContainer {
+    height: 23px;
+    width: 80px;
+  }
+}

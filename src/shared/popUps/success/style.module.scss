@@ -1,0 +1,39 @@
+@import "shared/utils/colors.scss";
+
+.iconStyle {
+  width: 68px;
+  height: 68px;
+}
+
+.title {
+  font-family: HNMedium;
+  font-size: 25px;
+  color: $DARK_GREY;
+  text-align: center;
+  line-height: 40px;
+}
+
+.subTitle {
+  font-family: HNBold;
+  font-size: 34px;
+  line-height: 55px;
+  color: $DARK_GREY;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .iconStyle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .title {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  .subTitle {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}

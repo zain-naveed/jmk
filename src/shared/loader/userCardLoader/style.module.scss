@@ -1,0 +1,23 @@
+@import "shared/utils/colors.scss";
+
+.avatarStyle {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.nameLabel {
+  height: 14px;
+  width: 60px;
+}
+
+.nameLabel2 {
+  height: 14px;
+  width: 60px;
+}
+
+.nameLabel3 {
+  height: 18px;
+  width: 60px;
+}

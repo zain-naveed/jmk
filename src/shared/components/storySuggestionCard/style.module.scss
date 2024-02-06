@@ -1,0 +1,230 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.contestCardContainer {
+  min-height: 501px;
+  max-height: 501px;
+  background-color: white;
+}
+
+.iconUpArrow {
+  min-height: 24px;
+  min-width: 24px;
+  margin-top: 3px;
+}
+
+.iconUpArrow path {
+  stroke: $DARK_GREY;
+}
+
+.greenActionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.greenActionIconStyle path {
+  stroke: $PRIMARY;
+}
+
+.storyLabel {
+  // font-family: ALBold;
+  font-family: HNRegular;
+  font-size: 22px;
+  color: $DARK_GREY;
+  &:hover {
+    cursor: pointer;
+  }
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.submitStoryContainer {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 170px;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.submitLabel {
+  font-family: HNRegular;
+  font-size: 14px;
+  text-align: left;
+  color: $PRIMARY;
+}
+
+.appertureIcon {
+  height: 18px;
+  width: 18px;
+}
+.descContainer {
+  max-height: 100px;
+  min-height: 100px;
+}
+.descStyle {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: left;
+  @include elipsis(4);
+}
+
+.actionContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+.actionContainerBg {
+  min-height: 44px;
+}
+
+.topContainer {
+  max-height: 265px;
+  min-height: 265px;
+  height: 100%;
+}
+
+.topContainer3 {
+  max-height: 265px;
+  min-height: 265px;
+  height: 100%;
+}
+
+.topContainer2 {
+  max-height: 220px;
+  min-height: 168px;
+}
+
+.hieght {
+  min-height: 30px;
+}
+.artStyle {
+  min-width: 176px;
+  min-height: 192px;
+  max-width: 176px;
+  max-height: 192px;
+  object-fit: cover;
+}
+
+.btmBorder {
+  border-bottom: 1px solid #e4e7ec;
+}
+.actionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+.greyActionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+.greyActionIconStyle path {
+  stroke: $GREY2;
+}
+
+.actionlabel {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+}
+
+.singleLine {
+  -webkit-line-clamp: 1;
+}
+.doubleLine {
+  -webkit-line-clamp: 2;
+}
+
+.optionsContainer {
+  width: 189px !important;
+  right: 10px;
+  top: 20px;
+}
+
+.pendingContainer {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 16px;
+}
+
+.pendingLabel {
+  font-size: 12px;
+  font-family: HNMedium;
+  color: $GREY2;
+}
+
+.timerContainer {
+  height: 22px;
+  border-radius: 16px;
+  background: #ecfdf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerLabel {
+  font-size: 12px;
+  font-family: InterMedium;
+  color: #027a48;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #e4e7ec;
+}
+.descStyle2 {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: left;
+  @include elipsis(3);
+}
+.descStyle2Container {
+  max-height: 76px;
+  min-height: 68px;
+  overflow: hidden;
+}
+.descStyleContainer {
+  max-height: 100px;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .artStyle {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .topContainer {
+    max-height: 420px;
+    min-height: 378px;
+  }
+  .topContainer3 {
+    max-height: 420px;
+    min-height: 420px;
+  }
+  .topContainer2 {
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .optionsContainer {
+    right: 10px;
+  }
+}

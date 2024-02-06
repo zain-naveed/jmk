@@ -1,0 +1,98 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.postCardContainer {
+  max-width: 90%;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  max-height: 322px;
+}
+
+.imgContainer {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.postImg {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 16px;
+  color: $DARK_GREY;
+  text-align: left;
+  @include elipsis(1);
+}
+.dateIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.dateLabel {
+  font-family: HNRegular;
+  font-size: 12px;
+  color: $GREY2;
+  text-align: left;
+}
+
+@mixin tagContainer {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.publishTagContainer {
+  @include tagContainer();
+  background-color: #ecfdf3;
+}
+
+.draftTagContainer {
+  @include tagContainer();
+  background-color: #f2f4f7;
+}
+
+@mixin tagLabel {
+  font-family: HNMedium;
+  font-size: 12px;
+}
+
+.publishTag {
+  @include tagLabel();
+  color: #027a48;
+}
+
+.draftTag {
+  @include tagLabel();
+  color: $GREY2;
+}
+
+.moreIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.moreIcon path {
+  stroke: #98a2b3;
+}
+
+.optionsContainer {
+  width: 130px !important;
+  right: 0px;
+  top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .postCardContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,122 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.searchContainer {
+  height: 40px;
+  width: 217px;
+  border-radius: 24px;
+  border: 1px solid $LIGHT_GREY;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconStyle {
+  height: 20px;
+  width: 20px;
+}
+
+.iconStyle path {
+  stroke: $GREY;
+}
+
+.searchInput {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  width: 90%;
+}
+
+.filterContainer {
+  height: 40px;
+  min-width: 140px;
+  border-radius: 24px;
+  border: 1px solid $GREY2;
+}
+.filterIcon {
+  height: 20px;
+  width: 20px;
+}
+.filterLabel {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $DARK_GREY;
+}
+
+.selectedFilter {
+  font-family: HNBold;
+  font-size: 18px;
+  color: $GREY2;
+}
+
+.optionsContainer {
+  width: 140px !important;
+  top: 35px;
+  z-index: 2;
+}
+
+.postCardContainer {
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+}
+
+.imgContainer {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.postImg {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.topLevelContainer {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topLevelContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topLevelContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (max-width: 576px) {
+  .searchContainer {
+    height: 34px;
+    width: 180px;
+    border-radius: 20px;
+  }
+
+  .iconStyle {
+    height: 20px;
+    width: 20px;
+  }
+
+  .filterContainer {
+    height: 34px;
+    min-width: 117px;
+    border-radius: 20px;
+  }
+
+  .filterLabel {
+    font-size: 14px;
+  }
+  .filterIcon {
+    height: 17px;
+    width: 17px;
+  }
+}
+
+.topLevelContainer {
+  height: 100vh;
+  overflow-x: hidden;
+}

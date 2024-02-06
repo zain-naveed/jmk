@@ -1,0 +1,32 @@
+@import "shared/utils/colors.scss";
+
+.crossIcon {
+  height: 24px;
+  width: 24px;
+}
+.crossIcon path {
+  stroke: $GREY;
+  fill: $GREY;
+}
+.logo {
+  width: 91.25px;
+  height: 45.33px;
+}
+.heading {
+  font-family: HNBold;
+  font-size: 21px;
+  color: $DARK_GREY;
+}
+.headText {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: center;
+}
+
+.error {
+  color: #ea5b5b;
+  font-size: 11px;
+  text-align: left;
+  z-index: 1;
+}

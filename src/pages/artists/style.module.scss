@@ -1,0 +1,95 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.topMainContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.artistsContainer {
+  height: 100vh;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 44px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.titleLoader {
+  height: 44px;
+  width: 185px;
+}
+
+.filterContainer {
+  height: 40px;
+  border: 1px solid $DARK_GREY;
+  border-radius: 24px;
+  min-width: 120px;
+}
+
+.filterContainerLoader {
+  height: 40px;
+  border-radius: 24px;
+  min-width: 120px;
+}
+
+.filterLabel {
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $DARK_GREY;
+  text-align: center;
+}
+
+.filterIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.optionsContainer {
+  top: 40px;
+  width: 120px !important;
+}
+
+.featureArtistContainer {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.featureArtistContainer::-webkit-scrollbar {
+  height: 5px;
+}
+
+.featureArtistContainer::-webkit-scrollbar-thumb {
+  background-color: $PRIMARY;
+  border-radius: 100px;
+}
+
+.featureArtistContainer::-webkit-scrollbar-track {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+  background-color: #f1f3f6;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .title {
+    font-size: 38px;
+  }
+  .titleLoader {
+    height: 38px;
+    width: 159px;
+  }
+}

@@ -1,0 +1,53 @@
+@import "shared/utils/colors.scss";
+
+.optionsContainer {
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: white;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+  min-height: 200px;
+  max-height: 200px;
+  top: 20px;
+  right: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.yearContainer {
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 14px;
+  font-family: HNMedium;
+  color: $DARK_GREY;
+}
+.labelStyle {
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $DARK_GREY;
+}
+
+.iconStyle {
+  height: 16px;
+  width: 16px;
+}
+
+.optionContainer {
+  border-bottom: 1px solid $BORDER;
+  &:hover {
+    background-color: $BG;
+  }
+}
+
+.topradius {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.btmradius {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

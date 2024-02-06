@@ -1,0 +1,23 @@
+@import "shared/utils/colors.scss";
+.avatarStyle {
+  min-height: 48px;
+  min-width: 48px;
+  max-height: 48px;
+  max-width: 48px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.commentUserName {
+  height: 20px;
+  border-radius: 8px;
+}
+
+.commentContent {
+  height: 80px;
+  border-radius: 8px;
+}
+
+.brdBtm {
+  border-bottom: 1px solid $BORDER;
+}

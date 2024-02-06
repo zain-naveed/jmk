@@ -1,0 +1,35 @@
+import classNames from "classnames";
+import SkeletonLoader from "../skeletonLoader";
+import StoryCountLoader from "../storyCountLoader";
+import styles from "./style.module.scss";
+
+const ArtProfileCardLoader = () => {
+  return (
+    <>
+      <div
+        className={classNames(styles.artContainer, "mt-4 d-flex flex-column")}
+      >
+        <div className={classNames("position-relative")}>
+          <SkeletonLoader iconStyle={classNames(styles.artStyle)} />
+        </div>
+
+        <div
+          className={classNames(
+            "d-flex justify-content-between align-items-center mt-4 position-relative"
+          )}
+        >
+          <div role="button" className={classNames("d-flex gap-2")}>
+            <StoryCountLoader
+              containerStyle={classNames(styles.categContainer)}
+            />
+            <StoryCountLoader />
+          </div>
+          <SkeletonLoader iconStyle={classNames(styles.moreIcon)} />
+        </div>
+        <SkeletonLoader iconStyle={classNames(styles.title, "mt-2")} />
+      </div>
+    </>
+  );
+};
+
+export default ArtProfileCardLoader;

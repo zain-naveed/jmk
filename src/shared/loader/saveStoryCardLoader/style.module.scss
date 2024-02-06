@@ -1,0 +1,61 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.hieght {
+  min-height: 30px;
+}
+.topContainer {
+  min-height: 265px;
+  max-height: 265px;
+  height: 100%;
+}
+.artStyle {
+  min-width: 176px;
+  max-width: 176px;
+  min-height: 192px;
+  max-height: 192px;
+  object-fit: cover;
+}
+.iconUpArrow {
+  min-height: 24px;
+  min-width: 24px;
+}
+.storyLabel {
+  height: 22px;
+  width: 90%;
+}
+
+.descStyle {
+  height: 16px;
+  width: 100%;
+}
+
+.categContainer {
+  height: 30px;
+  width: 140px;
+}
+
+.btmBorder {
+  height: 1px;
+  width: 96%;
+  background-color: #e4e7ec;
+  position: absolute;
+  bottom: 0;
+}
+.actionIconStyle {
+  height: 24px;
+  width: 24px;
+}
+
+@media (max-width: 576px) {
+  .artStyle {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 192px;
+    max-height: 192px;
+  }
+  .topContainer {
+    max-height: 484px;
+    min-height: 484px;
+  }
+}

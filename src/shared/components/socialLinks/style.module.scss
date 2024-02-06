@@ -1,0 +1,19 @@
+@import "shared/utils/colors.scss";
+
+.socialContainer {
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  background-color: $SECONDARY;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconStyle {
+  height: 16px;
+  width: 16px;
+}
+.iconStyle path {
+  fill: black;
+}

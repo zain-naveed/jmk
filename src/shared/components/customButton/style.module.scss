@@ -1,0 +1,57 @@
+@import "shared/utils/colors.scss";
+
+.customBtnContainer {
+  background-color: $PRIMARY;
+  color: black;
+  height: 44px;
+  border: 0px;
+  border-radius: 28px;
+  font-family: HNRegular;
+  width: 122px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customBtnContainer2 {
+  border: 1px solid $PRIMARY;
+  background-color: $PRIMARY;
+  color: black;
+  height: 44px;
+  border-radius: 28px;
+  font-family: HNRegular;
+  width: 144px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.iconStyle path {
+  stroke: black;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .customBtnContainer {
+    font-size: 15px;
+  }
+  .customBtnContainer2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .customBtnContainer {
+    height: 38px;
+    border-radius: 24px;
+    width: 107px;
+    font-size: 12px;
+  }
+  .customBtnContainer2 {
+    height: 38px;
+    border-radius: 24px;
+    width: 126px;
+    font-size: 12px;
+  }
+}

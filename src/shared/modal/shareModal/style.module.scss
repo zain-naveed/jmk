@@ -1,0 +1,112 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+@import "shared/components/storyCard/style.module.scss";
+
+.modalBody {
+  margin-top: 7%;
+  padding: 0px;
+}
+@mixin dialogContent {
+  overflow-y: auto;
+  min-width: fit-content;
+}
+
+.shareDialog {
+  @include dialogContent();
+}
+
+.closeIcon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.titleText {
+  height: 28px;
+  font-family: ALBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: $DARK_GREY;
+  margin-bottom: 0px;
+}
+
+.subTitle {
+  height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $GREY;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+
+.copyHeading {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  margin-bottom: 6px;
+}
+
+.copyIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.linkText {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+  background: #ffffff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  height: 44px;
+  padding: 14px;
+}
+
+.content {
+  width: 592px;
+  border-radius: 12px;
+  padding: 24px;
+  border-color: #e4e4e4;
+}
+
+.shareSocial {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+}
+
+.groupImage {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 620px) {
+  @mixin dialogContent {
+    overflow-y: auto;
+    min-width: auto !important;
+  }
+
+  .shareDialog {
+    @include dialogContent();
+  }
+}

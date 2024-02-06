@@ -1,0 +1,13 @@
+@import "shared/utils/colors.scss";
+
+.customBtnContainer {
+  height: 44px;
+  border-radius: 28px;
+  width: 122px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .customBtnContainer {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "shared/utils/colors.scss";
+.container {
+  background-color: $ULTRA_LIGHT_GREY;
+  border-radius: 16px;
+  padding-left: 2px;
+  max-height: 30px;
+}
+
+.typeContainer {
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typeLabel {
+  font-size: 12px;
+  font-family: HNMedium;
+  color: $ULTRA_DARK_GREY;
+  white-space: nowrap;
+}
+
+.timeLabel {
+  font-size: 12px;
+  font-family: HNMedium;
+  color: $ULTRA_DARK_GREY;
+  margin-right: 14px;
+  white-space: nowrap;
+}

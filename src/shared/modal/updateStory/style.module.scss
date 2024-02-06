@@ -1,0 +1,244 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.modalContent {
+  width: 800px;
+  border-color: #e4e4e4;
+  border-radius: 12px;
+}
+
+@mixin dialogContent {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: fit-content;
+}
+
+.dialogContent1 {
+  @include dialogContent();
+  height: 1268px;
+}
+
+.dialogContent2 {
+  @include dialogContent();
+  height: 868px;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  line-height: 32px;
+}
+
+.subTitle {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.title2 {
+  font-family: ALBold;
+  font-size: 20px;
+  color: $DARK_GREY;
+  text-align: left;
+  line-height: 24px;
+  @include elipsis(1);
+}
+
+.desc {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY2;
+  text-align: left;
+  @include elipsis(3);
+}
+
+.crossIcon {
+  height: 36px;
+  width: 36px;
+}
+
+.crossIcon path {
+  stroke: $GREY;
+  fill: $GREY;
+  stroke-width: 0px;
+}
+
+.art {
+  height: 303px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.categContainer {
+  height: 44px;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid $BORDER;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genresListContainer {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.genresListContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.genresListContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.genreContainer {
+  height: 22px;
+  border-radius: 16px;
+  background-color: #f2f4f7;
+  width: fit-content;
+}
+
+.genreLabel {
+  font-family: HNMedium;
+  font-size: 12px;
+  color: $DARK_GREY;
+}
+
+.genreCrossIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.headlineInput {
+  outline: 0px;
+  height: 52px;
+  width: 100%;
+  border: 1px solid $BORDER;
+  background-color: #f9fafb;
+  border-radius: 24px;
+  font-family: HNBold;
+  color: $DARK_GREY;
+  font-size: 24px;
+}
+
+.headlineInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: HNBold;
+  color: $GREY2;
+  opacity: 1; /* Firefox */
+}
+
+.headlineInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: HNBold;
+  color: $GREY2;
+}
+
+.headlineInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: HNBold;
+  color: $GREY2;
+}
+
+.tagsContainer {
+  height: 44px;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid $BORDER;
+}
+
+.error {
+  color: #ea5b5b;
+  font-size: 11px;
+  font-family: HNRegular;
+  text-align: left;
+  z-index: 1;
+}
+
+.error2 {
+  color: #ea5b5b;
+  font-size: 11px;
+  font-family: HNRegular;
+  text-align: left;
+  position: absolute;
+  bottom: -18px;
+  left: 0px;
+  z-index: 1;
+}
+
+.inputBtmText {
+  text-align: left;
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $GREY2;
+}
+
+.categLabel {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $DARK_GREY;
+  text-align: left;
+  @include elipsis(1);
+}
+
+.optionsContainer {
+  width: 95% !important;
+  left: 2.5%;
+  top: 70px;
+  z-index: 2;
+}
+.genreOptionsContainer {
+  width: 189px !important;
+  right: 20px;
+  top: 60px;
+  z-index: 2;
+}
+
+.tagsInput {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+  border: 0px;
+  outline: 0px;
+}
+
+.tagsHoverContainer {
+  position: absolute;
+  width: 100% !important;
+  right: 0px;
+  bottom: 50px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+}
+@media screen and (max-width: 576px) {
+  .crossIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modalContent {
+    width: 100vw !important;
+  }
+  .dialogContent1 {
+    margin: 0px !important;
+  }
+  .dialogContent2 {
+    margin: 0px !important;
+  }
+}

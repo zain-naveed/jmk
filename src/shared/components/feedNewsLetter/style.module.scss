@@ -1,0 +1,52 @@
+@import "shared/utils/colors.scss";
+
+.iconContainer {
+  width: 287px;
+  height: 287px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.subTitle {
+  font-family: ALRegualar;
+  font-size: 16px;
+  color: $DARK_GREY;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.btmBorder {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  background-color: #dee2e6;
+}
+
+@media screen and (max-width: 576px) {
+  .iconContainer {
+    width: 243.68px;
+    height: 243.68px;
+  }
+  .iconStyle {
+    width: 135px;
+    height: 135px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+}

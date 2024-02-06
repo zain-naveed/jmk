@@ -1,0 +1,87 @@
+@import "shared/utils/colors.scss";
+
+.commentContainer {
+  background-color: $BG;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 20px;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.desc {
+  font-family: InterRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+
+.commentListContainer {
+  min-height: 274px;
+  max-height: 674px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.commentListContainer::-webkit-scrollbar {
+  width: 3px;
+}
+
+.commentListContainer::-webkit-scrollbar-thumb {
+  background-color: $PRIMARY;
+  border-radius: 100px;
+}
+
+.commentListContainer::-webkit-scrollbar-track {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+  background-color: #f1f3f6;
+}
+
+.noContentIcon {
+  width: 124.75px;
+  height: 87.32px;
+}
+
+.noContentLabel1 {
+  font-size: 14px;
+}
+
+.noContentLabel2 {
+  font-size: 14px;
+}
+
+.noContentContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid $BORDER;
+}
+
+.loadMoreLabel {
+  font-family: HNMedium;
+  font-size: 16px;
+  color: $PRIMARY;
+}
+
+.loadMoreIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.loadMoreIcon path {
+  stroke: $PRIMARY;
+}

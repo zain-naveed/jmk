@@ -1,0 +1,54 @@
+@import "shared/components/storyCard/style.module.scss";
+
+.saveStoriesContainer {
+  height: calc(100vh);
+}
+
+.topMainContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.label {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  line-height: 32px;
+}
+
+.noResults {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 36px;
+  text-align: center;
+  color: $BLACK2;
+}
+
+.subTitle {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY;
+  text-align: left;
+}
+
+@media screen and (max-width: 575px) {
+  .label {
+    font-size: 24px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+}

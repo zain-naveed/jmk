@@ -1,0 +1,86 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.topLevelContainer {
+  border: 1px solid #e4e4e4;
+  border-radius: 24px;
+}
+
+.linkContainer {
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.titleLabel {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $GREY2;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.boldTitle {
+  font-family: InterMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.inputLabel {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $GREY2;
+  text-align: left;
+}
+
+.saveBtn {
+  width: 121px;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: $PRIMARY;
+}
+
+.cancelBtn {
+  width: 77px;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: #f9fafb;
+  color: $DARK_GREY;
+}
+
+.linkIcon {
+  height: 32px;
+  width: 32px;
+}
+
+.linkLabel {
+  font-family: InterMedium;
+  font-size: 14px;
+  color: #344054;
+  text-align: left;
+}
+
+.crossIcon {
+  height: 30px;
+  width: 30px;
+}
+.crossIcon path {
+  fill: $GREY;
+}
+
+@media screen and (max-width: 576px) {
+  .saveBtn {
+    width: 101px;
+    height: 34px;
+    font-size: 12px;
+  }
+  .cancelBtn {
+    width: 64px;
+    height: 34px;
+    font-size: 12px;
+  }
+}

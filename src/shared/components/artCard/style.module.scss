@@ -1,0 +1,101 @@
+@import "shared/utils/colors.scss";
+
+.artContainer {
+  min-width: 96px;
+  width: 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.artStyle {
+  width: 100%;
+  height: 246.32px;
+  object-fit: fill;
+}
+
+.moreIcon {
+  width: 14.25px;
+  height: 14.25px;
+}
+.title {
+  font-size: 16px;
+  font-family: ALBold;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.optionsContainer {
+  width: 189px !important;
+  right: -170px;
+  top: 20px;
+}
+
+.bttnContainer {
+  border: 1px solid $DARK_GREY;
+  outline: 0;
+  background-color: white;
+  color: $DARK_GREY;
+  font-size: 10px;
+  font-family: HNRegular;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98px;
+}
+
+.btnIcon {
+  height: 13px;
+  width: 13px;
+}
+
+@media screen and (max-width: 576px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .artContainer {
+    min-width: 96px;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .artContainer {
+    min-width: 96px;
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .artContainer {
+    min-width: 96px;
+    width: 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .artContainer {
+    min-width: 96px;
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .artContainer {
+    min-width: 96px;
+    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

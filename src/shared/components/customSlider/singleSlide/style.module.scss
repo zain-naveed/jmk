@@ -1,0 +1,9 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.sliderImg {
+  max-width: 608px;
+  max-height: 620px;
+  height: 100%;
+  width: 100%;
+}

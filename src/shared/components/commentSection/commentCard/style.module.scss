@@ -1,0 +1,140 @@
+@import "shared/utils/colors.scss";
+.avatarStyle {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.commentUserName {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $DARK_GREY;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.dateLabel {
+  font-family: HNRegular;
+  font-size: 12px;
+  color: $GREY2;
+  text-align: left;
+  min-width: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.commentContent {
+  font-family: HNRegular;
+  font-size: 14px;
+  color: $GREY;
+  text-align: left;
+}
+
+.tagText {
+  color: $PRIMARY;
+  font-family: HNMedium;
+  font-size: 14px;
+  text-align: left;
+}
+
+.actionIconStyle {
+  height: 20px;
+  width: 20px;
+}
+
+.likeIconHighlighted {
+  height: 20px;
+  width: 20px;
+}
+
+.likeIconHighlighted path {
+  fill: $PRIMARY;
+  stroke: $BG;
+}
+
+.dilikeIconHighlighted {
+  height: 20px;
+  width: 20px;
+}
+.dilikeIconHighlighted path {
+  fill: $DARK_GREY;
+  stroke: $BG;
+}
+
+.actionlabel {
+  font-family: HNMedium;
+  font-size: 12px;
+  color: $GREY;
+}
+
+.replyIcon {
+  height: 12px;
+  width: 12px;
+}
+
+.reportLabel {
+  font-family: HNRegular;
+  font-size: 12px;
+  color: $RED;
+  text-align: left;
+}
+.brdBtm {
+  border-bottom: 1px solid $BORDER;
+}
+
+.replyContainer {
+  background-color: #f2f4f7;
+  border-radius: 16px;
+}
+
+.repliesListContainer {
+  max-height: 160px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.repliesListContainer::-webkit-scrollbar {
+  width: 3px;
+}
+
+.repliesListContainer::-webkit-scrollbar-thumb {
+  background-color: $PRIMARY;
+  border-radius: 100px;
+}
+
+.repliesListContainer::-webkit-scrollbar-track {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+  background-color: #f1f3f6;
+}
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid $BORDER;
+}
+
+.loadMoreLabel {
+  font-family: HNMedium;
+  font-size: 16px;
+  color: $PRIMARY;
+}
+
+.loadMoreIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.loadMoreIcon path {
+  stroke: $PRIMARY;
+}

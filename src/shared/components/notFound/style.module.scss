@@ -1,0 +1,61 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.notFoundCountainer {
+  min-height: 400px;
+}
+.notFoundtitle {
+  font-family: HNMedium;
+  font-size: 20px;
+  color: $DARK_GREY;
+  text-align: center;
+}
+
+.notFoundSubTitle {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY;
+  text-align: center;
+}
+
+.iconStyle {
+  width: 58.13px;
+  height: 58.13px;
+}
+
+.btnContainer {
+  background-color: $PRIMARY;
+  width: fit-content;
+  height: 54px;
+  font-size: 18px;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.plusIcon {
+  height: 24px;
+  width: 24x;
+}
+
+@media screen and (max-width: 576px) {
+  .notFoundtitle {
+    font-size: 17px;
+  }
+  .notFoundSubTitle {
+    font-size: 14px;
+  }
+  .iconStyle {
+    width: 48.44px;
+    height: 48.44px;
+  }
+  .btnContainer {
+    width: fit-content;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 25;
+  }
+  .plusIcon {
+    height: 20px;
+    width: 20px;
+  }
+}

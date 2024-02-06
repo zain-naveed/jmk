@@ -1,0 +1,25 @@
+@import "shared/utils/colors.scss";
+
+.counterContainer {
+  border-radius: 16px;
+  background-color: $ULTRA_LIGHT_GREY;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+  max-height: 30px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  background-color: $ULTRA_DARK_GREY;
+}
+
+.counterLabel {
+  font-size: 12px;
+  font-family: HNMedium;
+  color: $ULTRA_DARK_GREY;
+  white-space: nowrap;
+}

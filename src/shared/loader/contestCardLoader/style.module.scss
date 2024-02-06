@@ -1,0 +1,69 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+.contestCardContainer {
+  min-height: fit-content;
+}
+
+.artStyle {
+  height: 285px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.categContainer {
+  height: 30px;
+  width: 140px;
+}
+
+.appertureIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.descStyle {
+  height: 16px;
+  width: 100%;
+}
+
+.actionContainer {
+  bottom: 0;
+  padding-right: 12px;
+}
+
+.actionContainerBg {
+  min-height: 44px;
+}
+
+@media (max-width: 576px) {
+  .actionContainerBg {
+    min-height: 22px;
+  }
+  .artStyle {
+    height: 118px;
+  }
+  .contestCardContainer {
+    min-height: fit-content;
+  }
+  .categContainer {
+    height: 21px;
+    width: 80px;
+  }
+  .contributeLabel {
+    font-size: 8px;
+  }
+  .iconStyle {
+    height: 12px;
+    width: 12px;
+  }
+  .btnContainer {
+    height: 26px;
+    width: 80px;
+  }
+  .btnIcon {
+    height: 12px;
+    width: 12px;
+  }
+  .descStyle {
+    height: 12px;
+  }
+}

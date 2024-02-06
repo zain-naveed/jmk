@@ -1,0 +1,77 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.avatarContainer {
+  height: 96px;
+  width: 96px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.imgstyle {
+  height: 96px;
+  width: 96px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.cameraIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.iconContainer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  height: 30px;
+}
+
+.topLevelContainer {
+  border: 1px solid #e4e4e4;
+  border-radius: 24px;
+}
+
+.inputLabel {
+  font-family: HNMedium;
+  font-size: 14px;
+  color: $GREY2;
+  text-align: left;
+}
+
+
+.saveBtn {
+  width: auto;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: $PRIMARY;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cancelBtn {
+  width: 77px;
+  height: 40px;
+  font-size: 14px;
+  justify-content: center;
+  background-color: #f9fafb;
+  color: $DARK_GREY;
+}
+
+@media screen and (max-width: 576px) {
+  .saveBtn {
+    width: auto;
+    height: 34px;
+    font-size: 12px;
+  }
+  .cancelBtn {
+    width: 64px;
+    height: 34px;
+    font-size: 12px;
+  }
+  .btnContainer{
+    margin-top: 20px;
+  }
+}

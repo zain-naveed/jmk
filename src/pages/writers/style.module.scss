@@ -1,0 +1,46 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.topMainContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.writersContainer {
+  height: 100vh;
+}
+
+.filterContainer {
+  height: 40px;
+  border: 1px solid $DARK_GREY;
+  border-radius: 24px;
+  min-width: 120px;
+}
+
+.filterLabel {
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $DARK_GREY;
+  text-align: center;
+}
+
+.filterIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.optionsContainer {
+  top: 40px;
+  width: 120px !important;
+}

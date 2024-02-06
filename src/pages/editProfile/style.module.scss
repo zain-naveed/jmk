@@ -1,0 +1,45 @@
+@import "shared/utils/responsive.module.scss";
+@import "shared/utils/colors.scss";
+
+.topMainContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.topMainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topMainContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.title {
+  font-family: ALBold;
+  font-size: 28px;
+  color: $DARK_GREY;
+  text-align: left;
+  line-height: 32px;
+}
+
+.subTitle {
+  font-family: HNRegular;
+  font-size: 16px;
+  color: $GREY;
+  text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+  .subTitle {
+    font-size: 14px;
+  }
+  .activeVerticalTabContainer {
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,26 @@
+@import "shared/utils/colors.scss";
+.container {
+  border-radius: 18px;
+  background-color: $BG;
+  padding: 30px;
+}
+
+.title {
+  font-size: 16px;
+  font-family: ALBold;
+  color: $DARK_GREY;
+  text-align: left;
+}
+.subTitle {
+  font-size: 14px;
+  font-family: HNRegular;
+  color: $DARK_GREY;
+  text-align: left;
+}
+
+.iconStyle {
+  min-height: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  max-width: 28px;
+}
